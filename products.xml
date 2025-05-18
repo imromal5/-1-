@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <item id="camera">
+        <name>Фотоаппарат Sony A7</name>
+        <price>3650</price>
+        <img>img/tripod.jpg</img>
+
+    </item>
+    <item id="lens">
+        <name>Объектив 50mm f/1.8</name>
+        <price>950</price>
+        <img>img/lens.jpg</img>
+    </item>
+    <item id="tripod">
+        <name>Штатив</name>
+        <price>100</price>
+        <img>img/tripod.jpg</img>
+    </item>
+    <item id="light">
+        <name>Осветительное оборудование</name>
+        <price>600</price>
+        <img>img/light.jpg</img>
+    </item>
+    <item id="accessories">
+        <name>Аксессуары</name>
+        <price>100</price>
+        <img>img/accessories.jpg</img>
+    </item>
+    <item id="memory">
+        <name>Карты памяти</name>
+        <price>50</price>
+        <img>img/memory.jpg</img>
+    </item>
+    <item id="battery">
+        <name>Аккумуляторы</name>
+        <price>85</price>
+        <img>img/battery.jpg</img>
+    </item>
+    <item id="backdrop">
+        <name>Фон для съемки</name>
+        <price>4000</price>
+        <img>img/backdrop.jpg</img>
+    </item>
+    <item id="microphone">
+        <name>Микрофон</name>
+        <price>470</price>
+        <img>img/microphone.jpg</img>
+    </item>
+</catalog>

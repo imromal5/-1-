@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Pixel Art</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="logo">PIXEL Art</h1>
+  
+      <!-- Основное меню -->
+      <nav class="nav-menu">
+          <ul class="nav-menu__list">
+              <li><a href="#o_nas">О нас</a></li>
+              <li><a href="#catalog">Каталог</a></li>
+              <li><a href="#dostavka">Доставка</a></li>
+              <li><a href="#history">История</a></li>
+          </ul>
+      </nav>
+  
+      <!-- Бургер кнопка -->
+      <button class="burger" aria-label="Меню">
+          <span></span>
+          <span></span>
+          <span></span>
+      </button>
+  
+      <!-- Бургер-меню (popup) -->
+      <div class="burger-menu-popup">
+          <ul class="burger-menu__list">
+              <li><a href="#o_nas">О нас</a></li>
+              <li><a href="#catalog">Каталог</a></li>
+              <li><a href="#dostavka">Доставка</a></li>
+              <li><a href="#history">История</a></li>
+          </ul>
+      </div>
+  </div>
+  
+</header>
+
+    <section class="hero">
+        <div class="container hero__container">
+            <div class="text">
+                <h1 class="text__h1">Где фото — там искусство!</h1>
+                <p class="text__p">
+                   Pixel Art — фотостудия нового времени, где технологии встречаются с творчеством. У нас вы найдёте не просто изображения, а настоящую заботу о каждом кадре, каждом пикселе. Живые портреты, идеальные композиции, снимки, как произведения искусства — всё это для того, чтобы ваш день начинался с вдохновения, запечатлённого в фотографии.                </p>
+            </div>
+            <div class="video">
+                <video src="./video/работа с фото.mp4" controls autoplay muted preload="auto" width="640"></video>
+            </div>
+        </div>
+    </section>
+
+    <section class="card"  id="o_nas">
+        <div class="container card__container">
+          <h1 class="card__title">Факты о нас</h1>
+          <div class="card__grid">
+            <div class="card__item">
+              <img src="./img/камера1.webp" alt="" class="card__img">
+              <h3 class="card__name">Камеры с характером</h3>
+            </div>
+            <div class="card__item">
+              <img src="./img/камера2.jpg" alt="Хлеб 2" class="card__img">
+              <h3 class="card__name">Подписка на оборудование</h3>
+            </div>
+            <div class="card__item">
+              <img src="./img/камера3.png" alt="Хлеб 3" class="card__img">
+              <h3 class="card__name">Сезонные акции на фототовары</h3>
+            </div>
+            <div class="card__item">
+              <img src="./img/ребрендинг.png" alt="Хлеб 4" class="card__img">
+              <h3 class="card__name">Фирменный брендинг</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="history">
+        <div class="container history__container" id="history">
+          <h1 class="history__title">История нашего фотомагазина</h1>
+      
+          <div class="history__block">
+            <img src="./img/фотограф.jpg" alt="Печь" class="history__img">
+            <p class="history__text">
+              Наша история началась с маленького семейного фотомагазина на окраине города. Первые камеры и объективы мы подбирали с любовью, ориентируясь на традиции мастеров фотографии. Сегодня Pixel Art — это современный магазин с душой, где классика встречается с инновациями, а каждый кадр становится искусством.            </p>
+          </div>
+      
+          <div class="history__block history__block--reverse">
+            <img src="./img/фотостудия внутри.jpg" alt="Пекарня" class="history__img">
+            <p class="history__text">
+              Сегодня Pixel Art — это современный фотомагазин с душой, где традиции фотографии сочетаются с инновационными технологиями, а каждый кадр становится искусством. У нас вы найдёте не просто технику, а вдохновение для новых творческих идей.            </p>
+          </div>
+      
+        </div>
+      </section>
+
+<section class="card">
+  <div class="container bread__container"   >
+    <h1 class="bread__title">Каталог товаров</h1>
+  <div class="catalog" id="catalog" >
+  </div>
+
+  <h2 class="history__title">Корзина</h2>
+  <div class="card__item">
+      <ul id="cart-items"></ul>
+  </div>
+</div>
+</section>
+
+
+
+<section class="order" id="dostavka">
+  <div class="container order__container">
+      <div class="order__left">
+          <h1>Закажи фототехнику прямо сейчас!</h1>
+          <img src="./img/доставка1.jpg" alt="Фототехника">
+      </div>
+      
+      <div class="order__right">
+          <form action="">
+              <label for="name">Ваше имя</label>
+              <input type="text" id="name" name="name" required>
+
+              <label for="phone">Ваш номер телефона</label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required placeholder="Например, 1234567890">
+
+              <label for="deliveryMethod">Способ доставки</label>
+              <select id="deliveryMethod" name="deliveryMethod">
+                  <option value="courier">Курьер</option>
+                  <option value="pickup">Самовывоз</option>
+                  <option value="mail">Почта</option>
+              </select>
+
+              <p id="deliveryMessage" class="extradition">Выберите способ доставки.</p>
+
+              <div id="addressContainer" style="display: none;">
+                  <label for="address">Ваш адрес</label>
+                  <input type="text" id="address" name="address">
+              </div>
+              <div >
+                <a href="404.html" class="order__button" style="font-family: Comfortaa_light;">Заказать</a>
+
+              </div>
+          </form>
+      </div>
+  </div>
+</section>
+    
+
+    <footer class="footer">
+      <div class="footer__container">
+          <h1 class="footer__title">PIXEL ART</h1>
+          <div class="footer__contacts">
+              <h3>Контакты</h3>
+              <div class="footer__info">
+                  <p>Email: pixelArt@gmail.com</p>
+                  <p>Адрес: г.Минск, ул.Белорусская, д.24</p>
+                  <p>Телефон: +375 29 123 45 67</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="./back/JavaScript.js" defer></script>
+    <script src="./back/jsXml.js" defer></script>
+
+</body>
+
+</html>
